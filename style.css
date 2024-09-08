@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding:0;
+    box-shadow: border-box;
+}
+header{
+    height:100vh;
+    width:100%;
+    background: url("https://koa.com/blog/images/family-camping-at-sunset.jpg?preset=heroimagecropped");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 65%;
+}
+.blur{
+    height:100vh;
+    width:100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.head{
+    position:fixed;
+    height:100px;
+    width:100%;
+    background-color:rgb(51,51,51);
+}
+.nav{
+    margin-top:40px;
+    height: 30px;
+    width: 430px;
+    float: right;
+    margin-right: 40px;
+}
+.logo{
+    padding:0 15px;
+    font-size: 30px;
+    margin-top:30px;
+    height:20px;
+    width:10%;
+    color:white;
+    float: left;
+}
+a{  
+    text-decoration: none;
+    color:white;
+    font-size: 1em;
+    padding: 1vw;
+}
+a:hover{
+    background-color: white;
+    color:blueviolet
+}
+.caption{
+    height:100vh;
+    width:100%;
+    color: rgb(253, 242, 242);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    text-align: center;
+    height:40vh;
+    width:70%;
+}
+.content h1{
+    font-size: 50px;
+}
+.content p{
+    font-size: 20px;
+}
+.content a{
+    color: black;
+    background-color: white;
+    padding: 15px 30px;
+}
+.content a:hover{
+    color:white;
+    background-color: rgba(5,5,5,0.3);
+    border: 2px solid white;
+}
+main h1, p ,li{
+    text-align: center;
+}
+.service{
+    height:auto;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    height:350px;
+    width:340px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+.card img{
+    height:150px;
+    width:150px;
+    border-radius: 100px;
+}
+.card h4{
+    font-size: 25px;
+}
+.card p{
+    font-size: 18px;
+}
+h1{
+    text-align: center;
+}
+#align{
+    text-align: center;
+}
+.info p, h2{
+    text-align: left; 
+ }
+.info{
+    height:130vh;
+    width:95%;
+    float: right;
+    text-align: left;
+}
+.container{
+    height: 60vh;
+    width:100%;
+}
+#address{
+    height:100vh;
+    width:40%;
+    float: left;
+    text-align: left;
+    font-size: 20px;
+}
+#address p{
+    text-align: left;
+    margin-top:5px;
+}
+.contact{
+    height:100vh;
+    width:50%;
+    float:right;
+}
+input{
+    height: 30px;
+    width:500px;
+    margin:10px 20px;
+    padding:5px;
+}
+#submit{
+    height: 40px;
+    width:200px;
+    margin:10px 20px;
+    padding:5px;
+    color:white;
+    background-color: black;
+}
