@@ -1,158 +1,307 @@
 *{
     margin: 0;
-    padding:0;
-    box-shadow: border-box;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
 }
 header{
-    height:100vh;
+    height:20vh;
     width:100%;
-    background: url("https://koa.com/blog/images/family-camping-at-sunset.jpg?preset=heroimagecropped");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 65%;
-}
-.blur{
-    height:100vh;
-    width:100%;
-    background-color: rgba(0,0,0,0.4);
-}
-.head{
-    position:fixed;
-    height:100px;
-    width:100%;
-    background-color:rgb(51,51,51);
 }
 .nav{
-    margin-top:40px;
-    height: 30px;
-    width: 430px;
-    float: right;
-    margin-right: 40px;
+    height:12vh;
+    width:100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .logo{
-    padding:0 15px;
-    font-size: 30px;
-    margin-top:30px;
-    height:20px;
-    width:10%;
+    height:10vh;
+    width:120px;
+    margin-left: 2%;
+
+}
+.logo img{
+    height:100%;
+    width: 100%;
+}
+.location{
+    height:40px;
+    width:60px;
     color:white;
-    float: left;
+    font-family: Calibri;
+    margin-left: 50%;
+
 }
-a{  
-    text-decoration: none;
-    color:white;
-    font-size: 1em;
-    padding: 1vw;
+.location p{
+    text-align: end;
+    font-size: 13px;
+    color:rgb(210, 208, 208);
 }
-a:hover{
-    background-color: white;
-    color:blueviolet
-}
-.caption{
-    height:100vh;
-    width:100%;
-    color: rgb(253, 242, 242);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.content{
-    text-align: center;
-    height:40vh;
-    width:70%;
-}
-.content h1{
-    font-size: 50px;
-}
-.content p{
-    font-size: 20px;
-}
-.content a{
-    color: black;
-    background-color: white;
-    padding: 15px 30px;
-}
-.content a:hover{
-    color:white;
-    background-color: rgba(5,5,5,0.3);
-    border: 2px solid white;
-}
-main h1, p ,li{
-    text-align: center;
-}
-.service{
-    height:auto;
-    width:100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.card{
-    height:350px;
-    width:340px;
-    margin: 10px;
-    text-align: center;
-    box-shadow: 1px 1px 1px 1px grey;
-}
-.card img{
-    height:150px;
-    width:150px;
-    border-radius: 100px;
-}
-.card h4{
+.location span{
     font-size: 25px;
 }
-.card p{
-    font-size: 18px;
+.location #country{
+    font-size: 17px;
 }
-h1{
-    text-align: center;
+.location .country{
+    display: flex;
+    align-items: center;
 }
-#align{
-    text-align: center;
-}
-.info p, h2{
-    text-align: left; 
- }
-.info{
-    height:130vh;
-    width:95%;
-    float: right;
-    text-align: left;
-}
-.container{
-    height: 60vh;
-    width:100%;
-}
-#address{
-    height:100vh;
-    width:40%;
-    float: left;
-    text-align: left;
-    font-size: 20px;
-}
-#address p{
-    text-align: left;
-    margin-top:5px;
-}
-.contact{
-    height:100vh;
+#search{
+    height:auto;
     width:50%;
-    float:right;
+    border:0.3vw solid black;
+    margin-left:8%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: relative;
 }
-input{
-    height: 30px;
-    width:500px;
-    margin:10px 20px;
-    padding:5px;
+#search select{
+    height:6.5vh;
+    width:8%;
+    padding: 3px;
+    border-radius: 2px 0 0 2px;
+    float: left;
+    border: 1px solid lightgray;
+    background-color: rgb(230,230,230);
+    font-size: 1vw;
+    outline: none;
 }
-#submit{
-    height: 40px;
-    width:200px;
-    margin:10px 20px;
-    padding:5px;
+
+#search input{
+    font-size: 1.3vw;
+    height:6.5vh;
+    width:82%;
+    padding:10px; 
+    border:2px solid white;
+    outline: none;
+    float: left;
+    
+}
+#search:focus-within{
+    border:0.3vw solid rgb(255,153,0);
+}
+#search button{
+    height: 6.5vh;
+    width:10%;
+    float:left;
+    color:black;
+    background-color: rgb(254,189,105);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 2px 2px 0;
+}
+#search span{
+    font-size: 2vw;
+    color: black;
+}
+.logon{
+    height: 7vh;
+    width:10%;
+    margin-left:1%;
+    font-size: 2vh;
+    font-family: Calibri;
+    display: flex;
+    align-items: center;
+}
+.logon p,span:hover{
+    color:rgba(255, 255, 255, 0.8);
+}
+.logon p, span{
     color:white;
-    background-color: black;
+}
+.logon span{
+    font-size: 1.5vw;
+}
+.logon p{
+    font-size: 1.2vw;
+    color:rgb(210, 208, 208);
+}
+.cart{
+    height: 6vh;
+    width:6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart #Cart:hover{
+   color:rgba(255, 255, 255, 0.8);
+}
+.cart span{
+    font-size: 1.5vw;
+}
+.cart #Cart{
+    font-size: 3vw;
+}
+.menu{
+    width:100%;
+    height:8vh;
+    background-color: rgb(34,47,61);
+    display: flex;
+    align-items: center;
+}
+.menu span{
+    padding:2px 5px;
+    font-size:2vw;
+}
+.menu a{
+    padding:2px 5px;
+    font-size: 1.3vw;
+    color:white;
+    margin-left: 5px;
+}
+.menu a:hover{
+    color:rgba(255, 255, 255, 0.8);
+}
+.menu #align-end{
+    margin-left:auto;
+    margin-right: 10px;
+}
+.main{
+    height:70vh;
+    width:100%;
+    background-image: url('hero-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.products{
+    height:90vh;
+    width:100%;
+    background-color: rgb(231, 229, 229);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+.products p{
+    font-size: 1.4vw;
+    font-weight: bold;
+    color:black;
+    font-family: calibri;
+    padding:10px 0px;
+}
+.products .card{
+    height:65vh;
+    width:250px;
+    background-color: white;
+    padding:5px 2%;
+    transition: transform .6s; 
+}
+img{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+}
+.products .shop{
+    padding: 10px 0px;
+    font-size: 1.2vw;
+    color: blue
+}
+.card:hover{
+    transform: scale(1.2); 
+}
+.top{
+    height: 8vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(55,71,90);
+}
+.top h4{
+    height: 3vh;
+    width:100%;
+    color: white; 
+    text-align: center;
+}
+footer{
+    background-color: rgb(35,47,62);
+    height:60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Calibri;
+}
+footer .info{
+    height: 50vh;
+    width:20%;
+}
+footer h2{
+    color:white;
+    margin:10px 0; 
+    font-size: 2vw;
+}
+footer a{
+    color:white;
+    display:block;
+    font-size: 1.2vw;
+    margin:2px 0;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width:600px) {
+        .products{
+            height:300vh;
+            width:100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .card{
+            height:65vh;
+            width:25%;
+        }
+        .card p{
+            font-size: 15px;
+        }
+        .card .shop{
+            font-size: 10px;
+        }   
+}
+@media screen and (max-width:1200px) {
+    .products{
+        height:180vh;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        height:65vh;
+        width:100%;
+        padding:5px 20px;
+    }
+    .card p{
+        font-size: 15px;
+    }
+    .card .shop{
+        font-size: 10px;
+    }   
+}
+@media screen and (max-width:1000px) {
+    .products{
+        height:300vh;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        height:65vh;
+        width:100%;
+        padding:5px 20px;
+    }
+    .card p{
+        font-size: 15px;
+    }
+    .card .shop{
+        font-size: 10px;
+    }   
 }
